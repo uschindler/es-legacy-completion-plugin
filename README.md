@@ -12,9 +12,18 @@ https://github.com/elastic/elasticsearch/issues/22912
 To restore the old behaviour of the old completion suggester for new
 indexes created with Elasticsearch 5.x use the following process:
 
+To compile the plugin you need to install 
+[maven](https://maven.apache.org/) and a JDK in your environment.
+
 The plugin compiles with Elasticsearch 5.3.0, but should also work with
 earlier or later versions. Just edit the POM file, compile, and create
-the package: `mvn clean install`
+the package:
+
+```sh
+git clone https://github.com/uschindler/es-legacy-completion-plugin
+cd es-legacy-completion-plugin
+mvn clean install
+```
 
 After that copy the `es-legacy-completion-plugin-5.X.Y.jar` file and the
 `plugin-descriptor.properties` file from the `target` directory to a new
