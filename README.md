@@ -15,7 +15,7 @@ indexes created with Elasticsearch 5.x use the following process:
 To compile the plugin you need to install 
 [maven](https://maven.apache.org/) and a JDK in your environment.
 
-The plugin compiles with Elasticsearch 5.3.0, but should also work with
+The plugin compiles with Elasticsearch 5.2.1, but should also work with
 earlier or later versions. Just edit the POM file, compile, and create
 the package:
 
