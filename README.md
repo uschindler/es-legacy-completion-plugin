@@ -26,10 +26,11 @@ cd es-legacy-completion-plugin
 mvn clean install
 ```
 
-After that you can install `es-legacy-completion-plugin-5.X.Y.zip` using
-the Elasticsearch `elasticsearch-plugin install` command.
+After that you can install `es-legacy-completion-plugin-5.X.Y.zip` from
+the `target/` directory using Elasticsearch `elasticsearch-plugin install`
+command.
 
-After installataion you can change your ES 2.x mapping to use the new
+After installation you can change your ES 2.x mapping to use the new
 field type `legacy_completion` instead of `completion` (which
 unfortunately triggers new behaviour). When you then query the index
 using the usual suggestion endpoint, it will return results in the same
