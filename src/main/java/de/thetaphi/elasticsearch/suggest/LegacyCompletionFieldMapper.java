@@ -182,7 +182,7 @@ public class LegacyCompletionFieldMapper extends CompletionFieldMapper2x {
     super.toXContent(innerBuilder, params);
     final BytesReference bytes = innerBuilder.endObject().bytes();
     @SuppressWarnings("unchecked") final Map<String,Object> map = (Map<String,Object>) XContentHelper
-        .convertToMap(bytes, true, XContentType.CBOR).v2().values().iterator().next();
+        .convertToMap(bytes, true).v2().values().iterator().next();
     map.put(Fields.TYPE, CONTENT_TYPE); // patch the name :-)
     return builder.field(simpleName(), map);
   }

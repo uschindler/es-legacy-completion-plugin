@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.thetaphi</groupId>
     <artifactId>es-legacy-completion-plugin</artifactId>
-    <version>5.3.0</version><!-- should be identical to elasticsearch version -->
+    <version>5.2.1</version><!-- should be identical to elasticsearch version -->
     <packaging>jar</packaging>
     <description>Restores Elasticsearch 2.x 'completion' field type and suggester using a new field type 'legacy_completion'.</description>
     <inceptionYear>2017</inceptionYear>
